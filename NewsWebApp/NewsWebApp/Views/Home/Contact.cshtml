@@ -1,0 +1,61 @@
+﻿@{
+    ViewData["Title"] = "Contact";
+}
+<!-- ##### Contact Form Area Start ##### -->
+<div class="contact-area section-padding-0-80">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="contact-title">
+                    <h2>Contact us</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-lg-8">
+                <div class="contact-form-area">
+                    <form action="@Url.Action("SendMessage", "Home")" method="post">
+                        <div class="row">
+                            <div class="col-12 col-lg-6">
+                                <input type="text" class="form-control" name="name" placeholder="Name">
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <input type="email" class="form-control" name="email" placeholder="E-mail">
+                            </div>
+                            <div class="col-12">
+                                <input type="text" class="form-control" name="subject" placeholder="Subject">
+                            </div>
+                            <div class="col-12">
+                                <textarea class="form-control" name="message" cols="30" rows="10" placeholder="Message"></textarea>
+                            </div>
+                            <div class="col-12 text-center">
+                                <button class="btn newspaper-btn mt-30 w-100" type="submit">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-4">
+                <!-- Single Contact Information -->
+                <div class="single-contact-information mb-30">
+                    <h6>Address:</h6>
+                    <p>01 Vo Van Ngan Linh Chieu <br>Thu Duc, Ho Chi Minh</p>
+                </div>
+                <!-- Single Contact Information -->
+                <div class="single-contact-information mb-30">
+                    <h6>Phone:</h6>
+                    <p>+84 979 319 598 <br>+84 123 456 789</p>
+                </div>
+                <!-- Single Contact Information -->
+                <div class="single-contact-information mb-30">
+                    <h6>Email:</h6>
+                    <p>thuydx.9598@gmail.com</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- ##### Contact Form Area End ##### -->
